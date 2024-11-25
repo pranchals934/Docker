@@ -1,0 +1,141 @@
+ec2-user@ip-172-31-31-187 html]$ history
+    1  lsb
+    2  cat /etc/os-release
+    3  sudo apt-get install htpd
+    4  sudo yum install htpd
+    5  sudo yum install httpd
+    6  sudo systemctl status
+    7  sudo systemctl status httpd
+    8  sudo systemctl  start httpd
+    9  sudo systemctl status httpd
+   10  sudo systemctl  enable  httpd
+   11  sudo systemctl status httpd
+   12  cd /var/www/html/
+   13  ll
+   14  cd /
+   15  ll
+   16  cd
+   17  cd /var/www/html/
+   18  ll
+   19  sudo wget https://www.free-css.com/free-css-templates
+   20  sudo wget https://teleporthq.io/static-website-templates
+   21  ls
+   22  sudo mv static-website-templates index.html
+   23  ls
+
+
+
+
+==================Docker command-============================
+
+
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+
+====================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sudo su
+    4  ls -lrth
+    5  vi docker_installation.sh
+    6  sh docker_installation.sh 
+    7  chmod +x install_docker.sh
+    8  ll
+    9  chmod +x docker_installation.sh 
+   10  bash docker_installation.sh 
+   11  docker ps
+   12  sudo chmod 666 /var/run/docker.sock
+   13  docker ps
+   14  sudo usermod -aG docker $USER
+   15  ls -l
+   16  docker --version
+   17  docker pull httpd
+   18  docker image
+   19  docker images
+   20  docker ps
+   21  docker run httpd
+   22  docker run -d --name=httpd -p 80:80 httpd:latest
+   23  docker ps
+   24  lsof -i 80
+   25  lsof -i:80
+   26  docker logs -f httpd
+   27  docker exce -it httpd bash
+   28  docker exce -it httpd
+   29  sudo docker exce -it httpd bash
+   30  docker ps
+   31  sudo docker exce -it adca bash
+   32  docker ps
+   33  sudo docker exce -it httpd
+   34  sudo docker exce -it httpd bash
+   35  docker ps
+   36  docker -exce -it httpd bash
+   37  clear
+   38  docker ps
+   39  docker image
+   40  docker images
+   41  docker ps
+   42  docker commit httpd httpd_snm
+   43  docker commit -t httpd httpd_snm:v1
+   44  docker commit  httpd httpd_snm:v1
+   45  docker images
+   46  docker tag httpd sonu:v1.0.0
+   47  docker images
+   48  docker ps
+   49  man docker
+   50  docker --help
+   51  docker ps
+   52  docker rename httpd app1
+   53  docker ps
+   54  docker commit app1 application:v1.0.1
+   55  docker images
+   56  docker login
+   57  docker login -u sanam358
+   58  docker push sanam358/application:v1.0.1
+   59  docker images
+   60  docker push sanam358/httpd
+   61  docker push sanam358/httpd_snm:v1 
+   62  docker tag httpd sanam358/sonu:v1.0.0
+   63  docker images
+   64  docker push sanam358/sonu:v1.0.0
+   65  clear
+   66  docker images
+   67  history
+8  docker images
+   79  docker save sonu:v1.0.0 sanam.tar
+   80  docker save -o sonu:v1.0.0 sanam.tar
+   81  docker save -o sanam.tar sonu:v1.0.0
+   82  ls 
+   83  docker iamages
+   84  docker images
+   85  docker rmi sonu:v1.0.0
+   86  docker images
+   87  ls
+   88  docker load -i sanam.tar 
+   89  docker images
